@@ -1,0 +1,16 @@
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro'); */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+/* @font-face { */
+  /* font-family: Avenir; */
+  /* src: url('../font/Nunito/Nunito-Regular.ttf'); */
+/* } */
+
+*{
+  font-family: 'Titillium Web','Roboto',  'Acme', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Titillium Web','Roboto', 'Acme', sans-serif;
+
+}
