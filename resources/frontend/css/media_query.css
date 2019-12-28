@@ -4,6 +4,8 @@
         height: 200%;
         left: 0;
     }
+
+    
     .ImageHero--small {
         min-height: 400px;
     }
@@ -260,11 +262,45 @@
     .Footer__Block--newsletter {
         -ms-flex-preferred-size: 375px;
         flex-basis: 375px;
-    }        
+    }
+    .Cart-Show{
+        width: 30%;
+    }
 }
 
 
-
+@media screen and (max-width: 640px){
+    .ProductItem__Info {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .Slider-follow .owl-item.active{
+        /* margin-right: 0px !important;
+        margin-left: 30px !important;
+        width: 200px !important; */
+    }
+    .img-slide-LOOK{
+        display: none;
+    }
+    .\31\/2--phone, .\32\/4--phone, .\36\/12--phone {
+        width: 50%;
+    }
+    .ProductList--grid {
+        margin-left: -10px;
+    }
+    .ProductList--grid>.Grid__Cell {
+        padding-left: 10px;
+        margin-bottom: 35px;
+    }
+    #section-collection-list .owl-carousel .item {
+        height: 470px;
+    }
+    .SectionFooter {
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }    
+}
 
 
 @media only screen and (max-width: 765px) {
@@ -276,9 +312,28 @@
 
 }
 
-@media only screen and (max-width: 500px) {  
-
-
+@media only screen and (max-width: 700px) {
+    #section-announcement a {
+        color: red;
+        font-size: 11px;
+    }    
+    .Header-Nav-Mobile{
+        display: block;
+    }
+    .shopify-section--header{
+        height: 118px;
+        visibility: hidden;        
+    }
+    .Slideshow .swiper-container-horizontal>.swiper-pagination-bullets{
+        left: 41px;
+        right: auto;
+    }    
+    .swiper-container {
+        height: 470px;
+    } 
+    .swiper-slide {
+        height: 470px;
+    }       
     h1{
         /* font-size: 2.5rem; */
         font-size: 1.55rem;
@@ -352,8 +407,19 @@
     #section-collection-list .CollectionItem__Link:hover {
         color: #ffffff;
     }
-}
-    .item:hover .swiper-slide{
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+    .RoundButton:not([aria-expanded="true"]):hover, .flickity-prev-next-button:not([aria-expanded="true"]):hover {
+        color: #5c5c5c;
     }
+    .RoundButton:hover, .flickity-prev-next-button:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .RoundButton[data-animate-bottom]:hover svg, [data-animate-bottom].flickity-prev-next-button:hover svg {
+        -webkit-animation: buttonFromTopToBottom 0.5s ease-in-out forwards;
+        animation: buttonFromTopToBottom 0.5s ease-in-out forwards;
+    }        
+}
+.item:hover .swiper-slide{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
