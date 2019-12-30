@@ -935,7 +935,8 @@ p:last-child, h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:las
 .img-small-LOOK{
     width: 266px;
     height: 400px;
-    background-size: cover;    
+    background-position: center;
+    background-size: cover;   
 }
 
 .ProductItem__Info--left {
@@ -1121,7 +1122,6 @@ a.wrap-FOLLOW:hover .overlay_FOLLOW{
     height: 100%;
     width: 200%;
     left: -50%;
-    pointer-events: none;
 }
 .FeatureText__ContentWrapper{
     text-align: center;
@@ -2212,8 +2212,7 @@ a.wrap-FOLLOW:hover .overlay_FOLLOW{
     z-index: -1;
 }
 .Button{
-    width: 100%;
-
+    /* width: 100%; */
 }
 .ButtonGroup {
     display: -webkit-box;
@@ -2296,4 +2295,28 @@ a.wrap-FOLLOW:hover .overlay_FOLLOW{
     text-align: center !important;
     display: flex !important;
     justify-content: center !important;
+}
+.wrap-product{
+    display: flex;
+    
+}
+.my-tab .ProductListWrapper{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .9s, visibility .7s;
+    position: absolute;
+    height: 0;
+}
+.my-tab .ProductListWrapper.active{
+    opacity: 1;
+    height: auto;
+    position: relative;
+    visibility: visible;
+}
+.FeatureText__ContentWrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.owl-carousel-RECENT  .owl-item{
+    margin: 0 40px;
 }

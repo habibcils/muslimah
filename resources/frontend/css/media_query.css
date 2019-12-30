@@ -362,6 +362,32 @@
 
 
 @media screen and (max-width: 640px){
+    .img-logo-nav-mob {
+        max-width: 90px;
+    }
+    .Instafeed__Caption{
+        font-size: .1rem;
+    }
+    .img-slide-FOLLOW{
+        height: 200px;
+    }
+    .img-small-LOOK {
+        width: 99%;
+    }
+    .Slider-look-shop .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+        top: 35%;
+    }
+    .Slider-look-shop .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+        top: 35%;
+    }    
+    .wrap-LOOK{    
+        width: 90%;        
+    }
+    .wrap-LOOK .d-flex{
+        width: 100%;
+    }    
     .owl-carousel-RECENT .owl-stage{
         justify-content: flex-start !important;
     }    
