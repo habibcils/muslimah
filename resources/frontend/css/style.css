@@ -150,6 +150,14 @@ a {
 }
 
 /* NAVIGATION */
+.Header-Nav-Mobile .Icon--nav.NOT-HOME {
+    color: #a99d9d;
+    -webkit-filter: none;
+}
+.Header-Nav-Mobile .Icon--nav{
+
+}
+
 .DropdownMenu {
     position: absolute;
     visibility: hidden;

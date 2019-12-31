@@ -362,6 +362,19 @@
 
 
 @media screen and (max-width: 640px){
+    .owl-carousel-RECENT .owl-stage{
+        display:  -webkit-box!important;;
+    }
+    .owl-carousel-RECENT .owl-item {
+        margin-left: 0;
+    }
+    .best-seller .Heading{
+        letter-spacing: .051em;
+        margin-left: 20px;
+    }
+    .owl-carousel-RECENT .owl-stage{
+
+    }
     .img-logo-nav-mob {
         max-width: 90px;
     }
