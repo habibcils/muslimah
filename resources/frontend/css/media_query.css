@@ -1,4 +1,17 @@
 @media screen and (min-width: 641px){
+    .u-h4, .Rte h4 {
+        font-size: 16px;
+    }
+    .QuantitySelector__Button {
+        padding: 7px 14px 8px 14px;
+    }
+    .QuantitySelector__CurrentQuantity {
+        font-size: 12px;
+    }
+    
+    .u-h2, .Rte h2 {
+        font-size: 18px;
+    }
     .PageHeader {
         margin: 50px 0;
     }
@@ -362,6 +375,38 @@
 
 
 @media screen and (max-width: 640px){
+    .wrap-product {
+        margin: 0;
+    }
+    .wrap-product .img-product{
+        width: 100%;
+        margin-top: 6px;
+    }
+    .wrap-product .owl-carousel .item{
+        /* height: 1190px; */
+        width: 100%;
+        /* height: 540px; */
+        height: auto;
+    }
+    .wrap-product .info-product{
+        margin: 0 20px;
+        width: 100%;
+        margin-block-end: 30px;
+    }
+    .ProductMeta__Vendor {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .ProductForm {
+        width: 100%;
+    }
+    .ProductMeta__Title {
+        text-align: center;
+        font-size: 18px;
+    }
+    .ProductMeta__PriceList {
+        text-align: center;
+    }
     .owl-carousel-RECENT .owl-stage{
         display:  -webkit-box!important;;
     }
@@ -560,8 +605,4 @@
         -webkit-animation: buttonFromTopToBottom 0.5s ease-in-out forwards;
         animation: buttonFromTopToBottom 0.5s ease-in-out forwards;
     }        
-}
-.item:hover .swiper-slide{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
 }

@@ -19,6 +19,9 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.min.css" />
 	<link rel='stylesheet' href='./assets/css/flickity.min.css'>
 	<link rel='stylesheet' href='./assets/css/swiper.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+	<!-- <link rel="stylesheet" href="./style.css">	 -->
 	<link rel='stylesheet' href='./assets/compro/css/style.css'>
 	<link rel='stylesheet' href='./assets/compro/css/media_query.css'>
 </head>
@@ -29,34 +32,34 @@
 	<div class="PageOverlay"></div>
 
 	<div class="Header-Nav-Mobile expect-home ">
-		<div class="Wrapper d-flex">
-			<button class="btn-nav-show Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-desk"
-				aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu"
-				aria-label="Open navigation">
-				<span class="hidden-phone">
-					<svg class="Icon Icon--nav Icon--nav-desktop" role="presentation" viewBox="0 0 24 16">
-						<path d="M0 15.985v-2h24v2H0zm0-9h24v2H0v-2zm0-7h24v2H0v-2z" fill="currentColor"></path>
-					</svg>
-				</span>
-			</button>
-			<img class="img-logo-nav-mob"
-				src="//cdn.shopify.com/s/files/1/0017/3663/8553/files/imageedit_3_8033060699_190x.png?v=1537538559"
-				srcset="//cdn.shopify.com/s/files/1/0017/3663/8553/files/imageedit_3_8033060699_190x.png?v=1537538559 1x, //cdn.shopify.com/s/files/1/0017/3663/8553/files/imageedit_3_8033060699_190x@2x.png?v=1537538559 2x"
-				width="190" alt="Mimamim.com">
-
-			<a class="btn-cart-show Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-desk"
-				data-action="open-drawer" data-drawer-id="sidebar-cart" aria-expanded="false" aria-label="Open cart">
-				<span class="hidden-phone">
-					<svg class="Icon Icon--nav Icon--cart-desktop" role="presentation" viewBox="0 0 19 23">
-						<path
-							d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z"
-							fill="currentColor">
-							<path>
-					</svg>
-				</span>
-				<span class="Header__CartDot "></span>
-			</a>
-		</div>
+			<div class="Wrapper d-flex">
+				<button class="btn-nav-show Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-desk"
+					aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu"
+					aria-label="Open navigation">
+					<span class="hidden-phone">
+						<svg class="Icon Icon--nav Icon--nav-desktop " role="presentation" viewBox="0 0 24 16">
+							<path d="M0 15.985v-2h24v2H0zm0-9h24v2H0v-2zm0-7h24v2H0v-2z" fill="currentColor"></path>
+						</svg>
+					</span>
+				</button>
+				<img class="img-logo-nav-mob"
+					src="//cdn.shopify.com/s/files/1/0017/3663/8553/files/imageedit_3_8033060699_190x.png?v=1537538559"
+					srcset="//cdn.shopify.com/s/files/1/0017/3663/8553/files/imageedit_3_8033060699_190x.png?v=1537538559 1x, //cdn.shopify.com/s/files/1/0017/3663/8553/files/imageedit_3_8033060699_190x@2x.png?v=1537538559 2x"
+					width="190" alt="Mimamim.com">
+	
+				<a class="btn-cart-show Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-desk"
+					data-action="open-drawer" data-drawer-id="sidebar-cart" aria-expanded="false" aria-label="Open cart">
+					<span class="hidden-phone">
+						<svg class="Icon Icon--nav NOT-HOME Icon--cart-desktop" role="presentation" viewBox="0 0 19 23">
+							<path
+								d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z"
+								fill="currentColor">
+								<path>
+						</svg>
+					</span>
+					<span class="Header__CartDot "></span>
+				</a>
+			</div>
 	</div>
 
 	<div class="SideBar-Mob">
@@ -311,13 +314,17 @@
 								<li class="HorizontalList__Item">
 								</li>
 								<li class="HorizontalList__Item">
-									<a href="/account/login" class="Heading Link Link--primary Text--subdued u-h8">Account</a>
+									<a href="/account/login"
+										class="Heading Link Link--primary Text--subdued u-h8">Account</a>
 								</li>
 								<li class="HorizontalList__Item">
-									<a href="#" class="btn-search-show Heading Link Link--primary Text--subdued u-h8" data-action="open-modal" aria-controls="Search">Search</a>
+									<a href="#" class="btn-search-show Heading Link Link--primary Text--subdued u-h8"
+										data-action="open-modal" aria-controls="Search">Search</a>
 								</li>
 								<li class="HorizontalList__Item">
-									<a href="#" class="btn-cart-show Heading u-h6" data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="Open cart">Cart (<span class="Header__CartCount">0</span>)</a>
+									<a href="#" class="btn-cart-show Heading u-h6" data-action="open-drawer"
+										data-drawer-id="sidebar-cart" aria-label="Open cart">Cart (<span
+											class="Header__CartCount">0</span>)</a>
 								</li>
 							</ul>
 						</nav>
@@ -336,12 +343,59 @@
 				<section class="Product Product--large">
 					<div class="wrap-product">
 						<div class="img-product">
-
+							<div class="owl-carousel owl-carousel-PRODUCT owl-theme">
+								<div class="item" data-id="0">
+									<div class="swiper-slide">
+									<!-- <div class="swiper-slide" style="background-image:url(./assets/compro/images/IMG_7875bbbb_600x.webp)"> -->
+										<img src="./assets/compro/images/p1.webp" alt="">
+									</div>
+								</div>
+								<div class="item" data-id="1">
+									<div class="swiper-slide">
+									<!-- <div class="swiper-slide" style="background-image:url(./assets/compro/images/wh.webp)"> -->
+										<img src="./assets/compro/images/p2.webp" alt="">
+									</div>
+								</div>
+								<div class="item" data-id="2">
+									<div class="swiper-slide">
+										<img src="./assets/compro/images/p3.webp" alt="">
+									</div>
+								</div>
+								<div class="item" data-id="3">
+									<div class="swiper-slide">
+										<img src="./assets/compro/images/p4.webp" alt="">
+									</div>
+								</div>
+								<div class="item" data-id="4">
+									<div class="swiper-slide">
+										<img src="./assets/compro/images/p5.webp" alt="">
+									</div>
+								</div>								
+							</div>
 						</div>
-
 						<div class="info-product">
 							<h2 class="ProductMeta__Vendor Heading u-h6">MIMAMIM HIJAB</h2>
+							<h1 class="ProductMeta__Title Heading u-h2">Tunik Azlina Choco</h1>
+							<div class="ProductMeta__PriceList Heading"><span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible="">269.000</span></div>
+							<div class="ProductMeta__Description Rte">
+								<span>Tampil gaya dengan atasan simple and elegant, memiliki ziper di&nbsp;belakang dan ada variasi outer menyatu, bisa dipadankan dengan kulot atau pun skirt favorit kamu.</span><br><br><span>Detail Product :</span><br><span>Bahan :Valleria</span><br><span>Berat Produk :570 gr</span><br><span>Panjang Depan :97cm</span><br><span>Panjang Belakang :97cm</span><br><span>Lingkar Dada :104cm</span><br><span>Lingkar Pinggang :103cm</span><br><span>Lingkar Pinggul :138cm</span><br><span>Lingkar Leher :50cm</span><br><span>Lingkar Bahu :40cm</span><br><span>Panjang Lengan :55cm</span><br><br><span>Note : Warna tidak 100% sama dengan aslinya, karena saat foto ada penambahan lighting camera.</span>
+							</div>
 
+							<form method="post" action="/cart/add" id="product_form_2146172469337" accept-charset="UTF-8" class="ProductForm" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><div class="ProductForm__Variants"><input type="hidden" name="id" data-sku="160" value="22012363931737"><div class="ProductForm__QuantitySelector">
+								<div class="QuantitySelector QuantitySelector--large"><span class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity"><svg class="Icon Icon--minus" role="presentation" viewBox="0 0 16 2">
+							  <path d="M1,1 L15,1" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+							</svg></span>
+								  <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1">
+								  <span class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity"><svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16">
+							  <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+								<path d="M8,1 L8,15"></path>
+								<path d="M1,8 L15,8"></path>
+							  </g>
+							</svg></span>
+								</div>
+							  </div></div><button type="submit" class="ProductForm__AddToCart Button Button--primary Button--full" data-action="add-to-cart"><span>Add to cart</span>
+							  <span class="Button__SeparatorDot"></span>
+							  <span data-money-convertible="">269.000</span></button></form>
 						</div>
 					</div>
 				</section>
@@ -349,26 +403,36 @@
 
 			<div id="collection-sort-popover" class="Popover">
 				<header class="Popover__Header">
-					<button class="btn-close-mobsort Popover__Close Icon-Wrapper--clickable" data-action="close-popover"><svg class="Icon Icon--close" role="presentation" viewBox="0 0 16 14">
+					<button class="btn-close-mobsort Popover__Close Icon-Wrapper--clickable"
+						data-action="close-popover"><svg class="Icon Icon--close" role="presentation"
+							viewBox="0 0 16 14">
 							<path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
 						</svg>
 					</button>
-					<span class="Popover__Title Heading u-h4">Sort</span>					
+					<span class="Popover__Title Heading u-h4">Sort</span>
 				</header>
 				<div class="Popover__Content">
 					<div class="Popover__ValueList" data-scrollable>
-						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="manual" data-action="select-value">Featured</button>
-						<button class="Popover__Value Heading Link Link--primary u-h6 is-selected" data-value="price-ascending" data-action="select-value">Price: Low to High</button>
-						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="price-descending" data-action="select-value">Price: High to Low</button>
-						
-						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="title-ascending" data-action="select-value">Alphabetically: A-Z</button>
-						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="title-descending" data-action="select-value">Alphabetically: Z-A</button>
-						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="created-ascending" data-action="select-value">Oldest to Newest</button>
-						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="created-descending" data-action="select-value">Newest to Oldest</button>
-						<button class="Popover__Value Heading Link Link--primary u-h6" data-value="best-selling" data-action="select-value">Best Selling</button>
+						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="manual"
+							data-action="select-value">Featured</button>
+						<button class="Popover__Value Heading Link Link--primary u-h6 is-selected"
+							data-value="price-ascending" data-action="select-value">Price: Low to High</button>
+						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="price-descending"
+							data-action="select-value">Price: High to Low</button>
+
+						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="title-ascending"
+							data-action="select-value">Alphabetically: A-Z</button>
+						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="title-descending"
+							data-action="select-value">Alphabetically: Z-A</button>
+						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="created-ascending"
+							data-action="select-value">Oldest to Newest</button>
+						<button class="Popover__Value  Heading Link Link--primary u-h6" data-value="created-descending"
+							data-action="select-value">Newest to Oldest</button>
+						<button class="Popover__Value Heading Link Link--primary u-h6" data-value="best-selling"
+							data-action="select-value">Best Selling</button>
 					</div>
 				</div>
-			</div>			
+			</div>
 
 			<div id="section-follow" class="shopify-section shopify-section--bordered">
 				<section class="Section Section--spacingNormal">
@@ -381,14 +445,16 @@
 						<div class="owl-carousel owl-carousel-RECENT owl-theme">
 							<div class="item">
 								<div class="wrap-RECENT">
-									<div class="img-small-LOOK" style="background-image:url(./assets/compro/images/lok1.webp)"></div>
+									<div class="img-small-LOOK"
+										style="background-image:url(./assets/compro/images/lok1.webp)"></div>
 									<div class="text">
 										<div class="ProductItem__Info ProductItem__Info--left">
 											<h2 class="ProductItem__Title Heading">
 												<a href="/products/dress-alexa-cream">Dress Alexa Cream</a>
 											</h2>
 											<div class="ProductItem__PriceList  Heading">
-												<span class="ProductItem__Price Price Text--subdued" data-money-convertible="">409.000</span>
+												<span class="ProductItem__Price Price Text--subdued"
+													data-money-convertible="">409.000</span>
 											</div>
 										</div>
 									</div>
@@ -397,19 +463,21 @@
 
 							<div class="item">
 								<div class="wrap-RECENT">
-									<div class="img-small-LOOK" style="background-image:url(./assets/compro/images/lok1.webp)"></div>
+									<div class="img-small-LOOK"
+										style="background-image:url(./assets/compro/images/lok1.webp)"></div>
 									<div class="text">
 										<div class="ProductItem__Info ProductItem__Info--left">
 											<h2 class="ProductItem__Title Heading">
 												<a href="/products/dress-alexa-cream">Dress Alexa Cream</a>
 											</h2>
 											<div class="ProductItem__PriceList  Heading">
-												<span class="ProductItem__Price Price Text--subdued" data-money-convertible="">409.000</span>
+												<span class="ProductItem__Price Price Text--subdued"
+													data-money-convertible="">409.000</span>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>							
+							</div>
 						</div>
 					</div>
 				</section>
@@ -565,6 +633,45 @@
 
 
 
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+
+		<div class="pswp__scroll-wrap">
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
 
 
 
@@ -578,30 +685,17 @@
 	<script src="./assets/js/flickity.pkgd.min.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/owl.carousel.js"></script>
-
+	<!-- <script src="./assets/js/simple-lightbox.js"></script> -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
 
 	<script>
 
+var num = 0;
+
 		$(document).ready(function () {
 
-			$('.main-carousel').flickity({
-				// options
-				cellAlign: 'middle',
-				//   contain: true,
-				fade: true,
-				fullscreen: true,
-				lazyLoad: 1,
-				draggable: true,
-				freeScroll: true,
-				on: {
-					ready: function () {
-						console.log('Flickity is ready');
-					},
-					change: function (index) {
-						console.log('Slide changed to' + index);
-					}
-				}
-			});
+			
 
 			var top = $(window).scrollTop();
 			$(window).scroll(function (event) {
@@ -634,7 +728,30 @@
 				$(this).removeClass('is-expanded')
 			})
 
-
+			$('.owl-carousel-PRODUCT').owlCarousel({
+				loop: true,
+				margin: 10,
+				// autoWidth:true,
+				// responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: false,
+						pagination: true,
+					},
+					600: {
+						items: 1,
+						nav: false,
+						pagination: true,						
+					},
+					1000: {
+						items: 1,
+						nav: false,
+						loop: false,
+						margin: 20
+					}
+				}
+			})
 
 			$('.owl-carousel-RECENT').owlCarousel({
 				// loop: true,
@@ -725,31 +842,103 @@
 
 
 			})
-			
-			$('.btn-show-subfil').click(function(){
+
+			$('.btn-show-subfil').click(function () {
 				$('.draw-sub-mobfil').addClass('active')
 			})
 
-			$('#collection-filter-drawer .Linklist__Item').click(function(){
+			$('#collection-filter-drawer .Linklist__Item').click(function () {
 				// $(this).next('.Linklist__Item').removeClass('is-selected');
-				if( $(this).hasClass('is-selected') ){
+				if ($(this).hasClass('is-selected')) {
 					$(this).removeClass('is-selected');
-				}else{
+				} else {
 					$(this).closest(".Linklist").find('.Linklist__Item').removeClass('is-selected');
 					$(this).addClass('is-selected');
 				}
 			})
 
-			$('.btn-show-mobsort').click(function(){
+			$('.btn-show-mobsort').click(function () {
 				$('#collection-sort-popover').addClass('active')
 				$('.PageOverlay').addClass('active');
 			})
 
-			$('.btn-close-mobsort').click(function(){
+			$('.btn-close-mobsort').click(function () {
 				$('.PageOverlay').removeClass('active');
 				$('#collection-sort-popover').removeClass('active')
 			})
+
+			$('.QuantitySelector__Button').click(function () {
+				var valuo = parseInt( $('.QuantitySelector__CurrentQuantity').val() )
+					console.log(valuo)
+					if($(this).attr('data-action') == 'increase-quantity' ){
+						$('.QuantitySelector__CurrentQuantity').val(valuo+1)
+						console.log(valuo)
+					}else{
+						if( valuo>1 ){
+							$('.QuantitySelector__CurrentQuantity').val(valuo-1)
+							console.log(valuo)
+						}
+					}
+			})
 			
+
+			$('.owl-carousel-PRODUCT .item').click(function () {
+				// $('.PageOverlay').removeClass('active');
+				// $('#collection-sort-popover').removeClass('active')
+				num = $(this).attr('data-id')
+				console.log(num)
+				openPhotoSwipe()
+			})
+
+
+var openPhotoSwipe = function() {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+		{
+        src: './assets/compro/images/p1.webp',
+        w: 749,
+        h: 1123
+		},
+        {
+            src: './assets/compro/images/p2.webp',
+			w: 749,
+			h: 1123
+        },
+        {
+            src: './assets/compro/images/p3.webp',
+			w: 749,
+			h: 1123
+        },
+        {
+            src: './assets/compro/images/p4.webp',
+			w: 749,
+			h: 1123
+        },
+        {
+            src: './assets/compro/images/p5.webp',
+			w: 749,
+			h: 1123
+        }         
+    ];
+    
+    // define options (if needed)
+    var options = {
+			 // history & focus options are disabled on CodePen        
+      	history: false,
+		focus: false,
+		index: parseInt(num),
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    };
+    
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+};
+
+
+// document.getElementById('btn').onclick = openPhotoSwipe;
 
 
 		});

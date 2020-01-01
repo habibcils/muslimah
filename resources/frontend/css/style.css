@@ -852,6 +852,11 @@ p:last-child, h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:las
     width: 100%;
     height: 100%;
 }
+#section-collection-list .item:hover .swiper-slide{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -1846,21 +1851,23 @@ a.wrap-FOLLOW:hover .overlay_FOLLOW{
     font-size: 11px;
 }
 
-.owl-carousel-COLLECTION .owl-dots{
+.owl-carousel-COLLECTION .owl-dots, .owl-carousel-PRODUCT .owl-dots{
     position: absolute;
     bottom: 20px;
     left: 20px; 
 }
-.owl-carousel-COLLECTION .owl-dots .owl-dot{
+.owl-carousel-COLLECTION .owl-dots .owl-dot, .owl-carousel-PRODUCT .owl-dots .owl-dot{
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #c3b8b8;
     height: 10px;
     border-radius: 50%;
     width: 10px;
     margin-right: 5px;
 }
-.owl-carousel-COLLECTION .owl-dots .owl-dot.active{
-    background-color: #fff;
+.owl-carousel-COLLECTION .owl-dots .owl-dot.active, .owl-carousel-PRODUCT .owl-dots .owl-dot.active{
+    background-color: #493d3d;
+    border: 2px solid #493d3d;
+
 
 }
 .Footer__Social {
@@ -2304,10 +2311,85 @@ a.wrap-FOLLOW:hover .overlay_FOLLOW{
     display: flex !important;
     justify-content: center !important;
 }
+
+/* DETAIL PRODUCTS */
 .wrap-product{
     display: flex;
-    
+    justify-content: space-around;
+    margin: 0 40px;
+    flex-wrap: wrap;
 }
+.wrap-product .img-product{
+    width: 50%;
+}
+.wrap-product .owl-carousel .item{
+    /* height: 1190px; */
+    /* width: auto; */
+}
+.wrap-product .owl-carousel .item:hover{
+    /* cursor: s-resize; */
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+.wrap-product .info-product{
+    width: 40%;
+}
+.ProductForm {
+    margin-top: 24px;
+    width: 80%;
+}
+.ProductMeta__Title {
+    margin-bottom: 0;
+}
+.ProductMeta__PriceList {
+    margin-top: 15px;
+}
+.Price {
+    display: inline-block;
+}
+.ProductMeta__Description {
+    margin: 24px 0;
+    padding-top: 24px;
+    border-top: 1px solid #e7e7e7;
+    text-align: left;
+}
+.ProductForm__AddToCart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.Button__SeparatorDot {
+    display: inline-block;
+    margin: 0 18px;
+    content: '';
+    height: 3px;
+    width: 3px;
+    border-radius: 100%;
+    background: currentColor;
+}
+.ProductForm__Variants {
+    margin-bottom: 25px;
+}
+.QuantitySelector {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+    white-space: nowrap;
+}
+.QuantitySelector--large .QuantitySelector__Button {
+    padding: 10px 20px;
+}
+
 .my-tab .ProductListWrapper{
     opacity: 0;
     visibility: hidden;
@@ -2321,10 +2403,49 @@ a.wrap-FOLLOW:hover .overlay_FOLLOW{
     position: relative;
     visibility: visible;
 }
+.ProductMeta__Vendor {
+    margin-bottom: 20px;
+}
 .FeatureText__ContentWrapper {
     padding-left: 24px;
     padding-right: 24px;
 }
 .owl-carousel-RECENT  .owl-item{
     margin: 0 40px;
+}
+.QuantitySelector__Button {
+    display: inline-block;
+    padding: 5px 9px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.QuantitySelector--large .QuantitySelector__CurrentQuantity {
+    width: 35px;
+    font-size: 14px;
+}
+.QuantitySelector__CurrentQuantity {
+    display: inline-block;
+    width: 20px;
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: normal;
+    background: transparent;
+    border: none;
+}
+.QuantitySelector--large .QuantitySelector__Button {
+    padding: 10px 20px;
+}
+.QuantitySelector--large svg {
+    width: 11px;
+    height: 11px;
+}
+.QuantitySelector svg {
+    width: 10px;
+    height: 10px;
+    stroke-width: 1.5px;
+    vertical-align: -1px;
 }
