@@ -28,6 +28,8 @@
 
 <body class="supports-sticky supports-hover">
 
+	<div class="wa-share-btn-container wa-share-btn-pos-right wa-share-btn-tmpl-inverted wa-share-btn-z-index"><p class="wa-share-btn-cta">Share</p><img src="https://cdn.shopify.com/s/files/1/0070/3666/5911/files/image_2.6.png?463" class="wa-share-btn-img"></div>
+	<div id="wa-chat-btn-root" class="wa-chat-btn-fixed wa-chat-btn-offset wa-chat-btn-base-icon"><img class="wa-chat-btn-icon-image-only" src="https://cdn.shopify.com/s/files/1/0070/3666/5911/files/icon_only_new_inverted.png?469"><span></span></div>
 
 	<div class="PageOverlay"></div>
 
@@ -343,6 +345,43 @@
 				<section class="Product Product--large">
 					<div class="wrap-product">
 						<div class="img-product">
+								<div class="Product__ActionList hidden-lap-and-up">
+									<div class="Product__ActionList">
+											<div class="Product__ActionItem hidden-lap-and-up">
+											<button class="RoundButton RoundButton--small RoundButton--flat zoom-product" data-action="open-product-zoom"><svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16">
+										<g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+											<path d="M8,1 L8,15"></path>
+											<path d="M1,8 L15,8"></path>
+										</g>
+										</svg></button>
+											</div><div class="Product__ActionItem">
+											<button class="RoundButton RoundButton--small RoundButton--flat" data-action="toggle-social-share" data-animate-bottom="" aria-expanded="false">
+												<span class="RoundButton__PrimaryState"><svg class="Icon Icon--share" role="presentation" viewBox="0 0 24 24">
+										<g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-width="1.5">
+											<path d="M8.6,10.2 L15.4,6.8"></path>
+											<path d="M8.6,13.7 L15.4,17.1"></path>
+											<circle stroke-linecap="square" cx="5" cy="12" r="4"></circle>
+											<circle stroke-linecap="square" cx="19" cy="5" r="4"></circle>
+											<circle stroke-linecap="square" cx="19" cy="19" r="4"></circle>
+										</g>
+										</svg></span>
+												<span class="RoundButton__SecondaryState"><svg class="Icon Icon--close" role="presentation" viewBox="0 0 16 14">
+										<path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+										</svg></span>
+											</button><div class="Product__ShareList" aria-hidden="true">
+												<a class="Product__ShareItem" href="https://www.facebook.com/sharer.php?u=https://mimamim.com/products/tunik-azlina-busui-choco" target="_blank" rel="noopener"><svg class="Icon Icon--facebook" viewBox="0 0 9 17">
+										<path d="M5.842 17V9.246h2.653l.398-3.023h-3.05v-1.93c0-.874.246-1.47 1.526-1.47H9V.118C8.718.082 7.75 0 6.623 0 4.27 0 2.66 1.408 2.66 3.994v2.23H0v3.022h2.66V17h3.182z"></path>
+										</svg>Facebook</a>
+												<a class="Product__ShareItem" href="https://pinterest.com/pin/create/button/?url=https://mimamim.com/products/tunik-azlina-busui-choco&amp;media=https://cdn.shopify.com/s/files/1/0017/3663/8553/products/IMG_7875bbbb_large.jpg?v=1569211287&amp;description=Tampil%20gaya%20dengan%20atasan%20simple%20and%20elegant,%20memiliki%20ziper%20di%C2%A0belakang%20dan%20ada%20variasi%20outer%20menyatu,..." target="_blank" rel="noopener"><svg class="Icon Icon--pinterest" role="presentation" viewBox="0 0 32 32">
+										<path d="M16 0q3.25 0 6.208 1.271t5.104 3.417 3.417 5.104T32 16q0 4.333-2.146 8.021t-5.833 5.833T16 32q-2.375 0-4.542-.625 1.208-1.958 1.625-3.458l1.125-4.375q.417.792 1.542 1.396t2.375.604q2.5 0 4.479-1.438t3.063-3.937 1.083-5.625q0-3.708-2.854-6.437t-7.271-2.729q-2.708 0-4.958.917T8.042 8.689t-2.104 3.208-.729 3.479q0 2.167.812 3.792t2.438 2.292q.292.125.5.021t.292-.396q.292-1.042.333-1.292.167-.458-.208-.875-1.083-1.208-1.083-3.125 0-3.167 2.188-5.437t5.729-2.271q3.125 0 4.875 1.708t1.75 4.458q0 2.292-.625 4.229t-1.792 3.104-2.667 1.167q-1.25 0-2.042-.917t-.5-2.167q.167-.583.438-1.5t.458-1.563.354-1.396.167-1.25q0-1.042-.542-1.708t-1.583-.667q-1.292 0-2.167 1.188t-.875 2.979q0 .667.104 1.292t.229.917l.125.292q-1.708 7.417-2.083 8.708-.333 1.583-.25 3.708-4.292-1.917-6.938-5.875T0 16Q0 9.375 4.687 4.688T15.999.001z"></path>
+										</svg>Pinterest</a>
+												<a class="Product__ShareItem" href="https://twitter.com/share?text=Tunik Azlina Choco&amp;url=https://mimamim.com/products/tunik-azlina-busui-choco" target="_blank" rel="noopener"><svg class="Icon Icon--twitter" role="presentation" viewBox="0 0 32 26">
+										<path d="M32 3.077c-1.1748.525-2.4433.8748-3.768 1.031 1.356-.8123 2.3932-2.0995 2.887-3.6305-1.2686.7498-2.6746 1.2997-4.168 1.5934C25.751.796 24.045.0025 22.158.0025c-3.6242 0-6.561 2.937-6.561 6.5612 0 .5124.0562 1.0123.1686 1.4935C10.3104 7.7822 5.474 5.1702 2.237 1.196c-.5624.9687-.8873 2.0997-.8873 3.2994 0 2.2746 1.156 4.2867 2.9182 5.4615-1.075-.0314-2.0872-.3313-2.9745-.8187v.0812c0 3.1806 2.262 5.8363 5.2677 6.4362-.55.15-1.131.2312-1.731.2312-.4248 0-.831-.0438-1.2372-.1188.8374 2.6057 3.262 4.5054 6.13 4.5616-2.2495 1.7622-5.074 2.812-8.1546 2.812-.531 0-1.0498-.0313-1.5684-.0938 2.912 1.8684 6.3613 2.9494 10.0668 2.9494 12.0726 0 18.6776-10.0043 18.6776-18.6776 0-.2874-.0063-.5686-.0188-.8498C30.0066 5.5514 31.119 4.3954 32 3.077z"></path>
+										</svg>Twitter</a>
+											</div>
+											</div>
+									</div>										
+								</div>							
 							<div class="owl-carousel owl-carousel-PRODUCT owl-theme">
 								<div class="item" data-id="0">
 									<div class="swiper-slide">
@@ -381,21 +420,71 @@
 								<span>Tampil gaya dengan atasan simple and elegant, memiliki ziper di&nbsp;belakang dan ada variasi outer menyatu, bisa dipadankan dengan kulot atau pun skirt favorit kamu.</span><br><br><span>Detail Product :</span><br><span>Bahan :Valleria</span><br><span>Berat Produk :570 gr</span><br><span>Panjang Depan :97cm</span><br><span>Panjang Belakang :97cm</span><br><span>Lingkar Dada :104cm</span><br><span>Lingkar Pinggang :103cm</span><br><span>Lingkar Pinggul :138cm</span><br><span>Lingkar Leher :50cm</span><br><span>Lingkar Bahu :40cm</span><br><span>Panjang Lengan :55cm</span><br><br><span>Note : Warna tidak 100% sama dengan aslinya, karena saat foto ada penambahan lighting camera.</span>
 							</div>
 
-							<form method="post" action="/cart/add" id="product_form_2146172469337" accept-charset="UTF-8" class="ProductForm" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><div class="ProductForm__Variants"><input type="hidden" name="id" data-sku="160" value="22012363931737"><div class="ProductForm__QuantitySelector">
-								<div class="QuantitySelector QuantitySelector--large"><span class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity"><svg class="Icon Icon--minus" role="presentation" viewBox="0 0 16 2">
-							  <path d="M1,1 L15,1" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
-							</svg></span>
-								  <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1">
-								  <span class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity"><svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16">
-							  <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
-								<path d="M8,1 L8,15"></path>
-								<path d="M1,8 L15,8"></path>
-							  </g>
-							</svg></span>
+							<form method="post" action="/cart/add" id="product_form_2146172469337" accept-charset="UTF-8" class="ProductForm" enctype="multipart/form-data">
+								<input type="hidden" name="form_type" value="product">
+								<input type="hidden" name="utf8" value="✓">
+								<div class="ProductForm__Variants">
+									<input type="hidden" name="id" data-sku="160" value="22012363931737">
+									<div class="ProductForm__QuantitySelector">
+										<div class="QuantitySelector QuantitySelector--large">
+											<span class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity">
+												<svg class="Icon Icon--minus" role="presentation" viewBox="0 0 16 2">
+													<path d="M1,1 L15,1" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+												</svg>
+											</span>
+											<input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1">
+											<span class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">
+												<svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16">
+													<g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+														<path d="M8,1 L8,15"></path>
+														<path d="M1,8 L15,8"></path>
+													</g>
+												</svg>
+											</span>
+										</div>
+									</div>
 								</div>
-							  </div></div><button type="submit" class="ProductForm__AddToCart Button Button--primary Button--full" data-action="add-to-cart"><span>Add to cart</span>
-							  <span class="Button__SeparatorDot"></span>
-							  <span data-money-convertible="">269.000</span></button></form>
+								<button type="submit" class="ProductForm__AddToCart Button Button--primary Button--full" data-action="add-to-cart">
+									<span>Add to cart</span>
+									<span class="Button__SeparatorDot"></span>
+									<span data-money-convertible="">269.000</span>
+								</button>
+							</form>
+							<div class="Product__ActionList hidden-pocket">
+									<div class="Product__ActionItem hidden-lap-and-up">
+									<button class="RoundButton RoundButton--small RoundButton--flat" data-action="open-product-zoom"><svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16">
+								<g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+									<path d="M8,1 L8,15"></path>
+									<path d="M1,8 L15,8"></path>
+								</g>
+								</svg></button>
+									</div><div class="Product__ActionItem">
+									<button class="RoundButton RoundButton--small RoundButton--flat" data-action="toggle-social-share" data-animate-bottom="" aria-expanded="false">
+										<span class="RoundButton__PrimaryState"><svg class="Icon Icon--share" role="presentation" viewBox="0 0 24 24">
+								<g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-width="1.5">
+									<path d="M8.6,10.2 L15.4,6.8"></path>
+									<path d="M8.6,13.7 L15.4,17.1"></path>
+									<circle stroke-linecap="square" cx="5" cy="12" r="4"></circle>
+									<circle stroke-linecap="square" cx="19" cy="5" r="4"></circle>
+									<circle stroke-linecap="square" cx="19" cy="19" r="4"></circle>
+								</g>
+								</svg></span>
+										<span class="RoundButton__SecondaryState"><svg class="Icon Icon--close" role="presentation" viewBox="0 0 16 14">
+								<path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+								</svg></span>
+									</button><div class="Product__ShareList" aria-hidden="true">
+										<a class="Product__ShareItem" href="https://www.facebook.com/sharer.php?u=https://mimamim.com/products/tunik-azlina-busui-choco" target="_blank" rel="noopener"><svg class="Icon Icon--facebook" viewBox="0 0 9 17">
+								<path d="M5.842 17V9.246h2.653l.398-3.023h-3.05v-1.93c0-.874.246-1.47 1.526-1.47H9V.118C8.718.082 7.75 0 6.623 0 4.27 0 2.66 1.408 2.66 3.994v2.23H0v3.022h2.66V17h3.182z"></path>
+								</svg>Facebook</a>
+										<a class="Product__ShareItem" href="https://pinterest.com/pin/create/button/?url=https://mimamim.com/products/tunik-azlina-busui-choco&amp;media=https://cdn.shopify.com/s/files/1/0017/3663/8553/products/IMG_7875bbbb_large.jpg?v=1569211287&amp;description=Tampil%20gaya%20dengan%20atasan%20simple%20and%20elegant,%20memiliki%20ziper%20di%C2%A0belakang%20dan%20ada%20variasi%20outer%20menyatu,..." target="_blank" rel="noopener"><svg class="Icon Icon--pinterest" role="presentation" viewBox="0 0 32 32">
+								<path d="M16 0q3.25 0 6.208 1.271t5.104 3.417 3.417 5.104T32 16q0 4.333-2.146 8.021t-5.833 5.833T16 32q-2.375 0-4.542-.625 1.208-1.958 1.625-3.458l1.125-4.375q.417.792 1.542 1.396t2.375.604q2.5 0 4.479-1.438t3.063-3.937 1.083-5.625q0-3.708-2.854-6.437t-7.271-2.729q-2.708 0-4.958.917T8.042 8.689t-2.104 3.208-.729 3.479q0 2.167.812 3.792t2.438 2.292q.292.125.5.021t.292-.396q.292-1.042.333-1.292.167-.458-.208-.875-1.083-1.208-1.083-3.125 0-3.167 2.188-5.437t5.729-2.271q3.125 0 4.875 1.708t1.75 4.458q0 2.292-.625 4.229t-1.792 3.104-2.667 1.167q-1.25 0-2.042-.917t-.5-2.167q.167-.583.438-1.5t.458-1.563.354-1.396.167-1.25q0-1.042-.542-1.708t-1.583-.667q-1.292 0-2.167 1.188t-.875 2.979q0 .667.104 1.292t.229.917l.125.292q-1.708 7.417-2.083 8.708-.333 1.583-.25 3.708-4.292-1.917-6.938-5.875T0 16Q0 9.375 4.687 4.688T15.999.001z"></path>
+								</svg>Pinterest</a>
+										<a class="Product__ShareItem" href="https://twitter.com/share?text=Tunik Azlina Choco&amp;url=https://mimamim.com/products/tunik-azlina-busui-choco" target="_blank" rel="noopener"><svg class="Icon Icon--twitter" role="presentation" viewBox="0 0 32 26">
+								<path d="M32 3.077c-1.1748.525-2.4433.8748-3.768 1.031 1.356-.8123 2.3932-2.0995 2.887-3.6305-1.2686.7498-2.6746 1.2997-4.168 1.5934C25.751.796 24.045.0025 22.158.0025c-3.6242 0-6.561 2.937-6.561 6.5612 0 .5124.0562 1.0123.1686 1.4935C10.3104 7.7822 5.474 5.1702 2.237 1.196c-.5624.9687-.8873 2.0997-.8873 3.2994 0 2.2746 1.156 4.2867 2.9182 5.4615-1.075-.0314-2.0872-.3313-2.9745-.8187v.0812c0 3.1806 2.262 5.8363 5.2677 6.4362-.55.15-1.131.2312-1.731.2312-.4248 0-.831-.0438-1.2372-.1188.8374 2.6057 3.262 4.5054 6.13 4.5616-2.2495 1.7622-5.074 2.812-8.1546 2.812-.531 0-1.0498-.0313-1.5684-.0938 2.912 1.8684 6.3613 2.9494 10.0668 2.9494 12.0726 0 18.6776-10.0043 18.6776-18.6776 0-.2874-.0063-.5686-.0188-.8498C30.0066 5.5514 31.119 4.3954 32 3.077z"></path>
+								</svg>Twitter</a>
+									</div>
+									</div>
+							</div>								
 						</div>
 					</div>
 				</section>
@@ -882,12 +971,34 @@ var num = 0;
 			})
 			
 
+			$('.zoom-product').click(function () {
+				// $('.PageOverlay').removeClass('active');
+				// $('#collection-sort-popover').removeClass('active')
+				
+				num = $('.owl-carousel-PRODUCT .owl-item.active .item').attr('data-id')
+				// console.log(num)
+				openPhotoSwipe()
+			})
 			$('.owl-carousel-PRODUCT .item').click(function () {
 				// $('.PageOverlay').removeClass('active');
 				// $('#collection-sort-popover').removeClass('active')
 				num = $(this).attr('data-id')
-				console.log(num)
+				// console.log(num)
 				openPhotoSwipe()
+			})
+			
+
+			$('.RoundButton__PrimaryState').click(function(){
+				$('.Product__ShareList').addClass('active')
+				$(this).parent('.RoundButton--small').addClass('RoundButton--secondaryState')
+				$(this).parent('.RoundButton--small').addClass('is-active')
+				$(this).parent('.RoundButton--small').attr('aria-expanded', 'true')
+			})
+			$('.RoundButton__SecondaryState').click(function(){
+				$('.Product__ShareList').removeClass('active')
+				$(this).parent('.RoundButton--small').removeClass('RoundButton--secondaryState')
+				$(this).parent('.RoundButton--small').removeClass('is-active')
+				$(this).parent('.RoundButton--small').attr('aria-expanded', 'false')
 			})
 
 
